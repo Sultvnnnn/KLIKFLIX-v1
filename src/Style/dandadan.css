@@ -1,0 +1,21 @@
+.centered-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Responsif untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .centered-video {
+      max-width: 100%;
+    }
+  
+    .centered-video .video-element {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

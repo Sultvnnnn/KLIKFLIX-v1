@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --bebasneue: "Bebas Neue", sans-serif;
+  --jetbrains: "JetBrains Mono", sans-serif;
+}
+
+body,
+html {
+  font-family: var(--bebasneue);
+  padding: 0;
+  margin: 0;
+}
+
+.brand-logo {
+  width: 100px;
+}
+
+.navbar.sticky {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100;
+}
+
+.myBG {
+  height: 100vh;
+  background: url("../assets/Image/bg/main5.jpg");
+  background-size: cover;
+  flex-direction: column;
+}
+
+.navbar {
+  font-family: var(--bebasneue);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  );
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-align: center;
+}
+
+.text-intro {
+  font-family: var(--bebasneue);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  text-shadow: 4px 4px rgb(71, 71, 71);
+  letter-spacing: 2px;
+}
+
+/* COMING SOON SECTION start */
+.comingsoon {
+  height: auto;
+  background-color: rgb(14, 13, 13);
+}
+
+.soon-container {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.soon {
+  display: inline-flex;
+  padding: 1rem;
+  gap: 5px;
+  animation: infinite-scroll 60s linear infinite;
+  -webkit-animation: infinite-scroll 60s linear infinite;
+}
+
+.soonIMG {
+  width: 200px;
+  height: 300px;
+}
+
+.card-wrap {
+  flex: 0 0 auto;
+  margin-right: 1rem;
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+
+/* COMING SOON SECTION end */
+
+.mainContent {
+  height: auto;
+  background-color: rgb(14, 13, 13);
+  background-size: cover;
+  flex-direction: column;
+}
+
+.trending {
+  height: auto;
+  background-color: rgb(14, 13, 13);
+  background-size: cover;
+  flex-direction: column;
+}
+
+.animeSection {
+  height: auto;
+  background-color: rgb(14, 13, 13);
+  background-size: cover;
+  flex-direction: column;
+}
+
+/* MOVIE CARD SECTION start */
+
+/* .movieWrapper {
+} */
+
+.movieImg {
+  height: auto;
+  margin: 8px;
+  padding: 8px;
+}
+
+.movieName {
+  font-family: var(--bebasneue);
+  font-size: 25px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.moviePoster {
+  height: 500px;
+}
+
+/* MOVIE CARD SECTION end */
+
+/* DANDADAN SECTION */
+.mydandadanBG {
+  height: 100vh;
+  background: rgb(14, 13, 13);
+}
+
+.dandadanName {
+  font-family: var(--bebasneue);
+  font-size: 80px;
+  text-align: center;
+}
+
+.dpwvName {
+  font-family: var(--bebasneue);
+  font-size: 50px;
+  text-align: center;
+}
+
+.centered-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+  .centered-video {
+    max-width: 100%;
+  }
+
+  .centered-video .video-element {
+    width: 100%;
+    height: auto;
+  }
+}
