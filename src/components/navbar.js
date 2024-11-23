@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav, DropdownItem } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
-import BrandLogo from "../assets/BRAND.png";
+import BrandLogo from "../assets/BRANDRED.png";
 
 function Navigationbar() {
   window.addEventListener("scroll", function () {
@@ -20,7 +20,7 @@ function Navigationbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="nav-list mr-auto">
             <Nav.Link href="#trendingsection">Trending</Nav.Link>
             <Nav.Link href="#comingsoon">Coming Soon</Nav.Link>
             <Dropdown>

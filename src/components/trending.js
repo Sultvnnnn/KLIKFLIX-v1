@@ -7,7 +7,7 @@ import { Button, Offcanvas } from "react-bootstrap";
 /* ASSETS */
 import DandadanImg from "../assets/Image/Anime/Dandadan.png";
 import BluelockImg from "../assets/Image/Anime/blue lock.jpg";
-import KangMakImg from "../assets/Image/Movies/Kang Mak.png";
+import AlienImg from "../assets/Image/Movies/Alien.png";
 import DPWVImg from "../assets/Image/Movies/dpwv.png";
 import JokerImg from "../assets/Image/Movies/JOKER FOLIE À DEUX.jpg";
 import Venom3Img from "../assets/Image/Movies/Venom 3 Poster.jpg";
@@ -120,12 +120,7 @@ function TrendingSection() {
                   Rating 7.7/10 ⭐
                 </Offcanvas.Body>
               </Offcanvas>
-              <Button
-                as={Link}
-                to="/dpwv"
-                variant="danger"
-                className="mt-1"
-              >
+              <Button as={Link} to="/dpwv" variant="danger" className="mt-1">
                 Tonton Sekarang
               </Button>
             </Card>
@@ -169,7 +164,7 @@ function TrendingSection() {
                   Rating 8.5/10 ⭐
                 </Offcanvas.Body>
               </Offcanvas>
-              <Button variant="danger" className="mt-1">
+              <Button as={Link} to="/venom" variant="danger" className="mt-1">
                 Tonton Sekarang
               </Button>
             </Card>
@@ -211,7 +206,7 @@ function TrendingSection() {
                   Rating 5.2/10 ⭐
                 </Offcanvas.Body>
               </Offcanvas>
-              <Button variant="danger" className="mt-1">
+              <Button as={Link} to="/joker" variant="danger" className="mt-1">
                 Tonton Sekarang
               </Button>
             </Card>
@@ -222,11 +217,11 @@ function TrendingSection() {
           <Col md={4} className="movieWrapper">
             <Card className="text-white movieImg bg-dark">
               <Image
-                src={KangMakImg}
-                alt="Movies KangMak"
+                src={AlienImg}
+                alt="Movies Alien:Romulus"
                 className="moviePoster"
               />
-              <div className="movieName">Kang Mak from Pee Mak</div>
+              <div className="movieName">Alien: Romulus</div>
               <Button
                 variant="outline-light"
                 className="mt-1"
@@ -236,27 +231,24 @@ function TrendingSection() {
               </Button>
               <Offcanvas show={show === 5} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title>Kang Mak from Pee Mak</Offcanvas.Title>
+                  <Offcanvas.Title>Alien: Romulus</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  "Kang Mak from Pee Mak" adalah adaptasi Indonesia dari film
-                  horor-komedi Thailand "Pee Mak." Disutradarai oleh Herwin
-                  Novianto, film ini menampilkan Vino G. Bastian sebagai Makmur,
-                  seorang tentara yang meninggalkan istrinya Sari (Marsha
-                  Timothy) demi bertugas membela NKRI. Bersama dengan
-                  teman-temannya, Makmur akhirnya kembali setelah perang dan
-                  menemukan Sari telah melahirkan anak mereka. Namun,
-                  desas-desus bahwa Sari telah meninggal membuat cerita berubah
-                  menjadi petualangan penuh misteri dan humor gelap. Film ini
-                  berhasil memadukan elemen horor dengan komedi khas Indonesia,
-                  membawa kesegaran tersendiri untuk penonton lokal.
+                  Film dalam seri Alien yang disutradarai oleh Fede Álvarez.
+                  Film ini menceritakan sekelompok anak muda yang terjebak di
+                  planet asing dan harus menghadapi ancaman dari Xenomorph yang
+                  mematikan. Ceritanya menggabungkan ketegangan khas dari seri
+                  Alien dengan elemen survival horror, menghadirkan perjuangan
+                  hidup di tengah ancaman alien yang tak kenal ampun. Film ini
+                  merupakan kolaborasi dengan 20th Century Studios dan
+                  direncanakan rilis pada 16 Agustus 2024
                   <br />
                   <br />
                   <br />
-                  Rating 6.9/10 ⭐
+                  Rating 7.2/10 ⭐
                 </Offcanvas.Body>
               </Offcanvas>
-              <Button variant="danger" className="mt-1">
+              <Button as={Link} to="/alien" variant="danger" className="mt-1">
                 Tonton Sekarang
               </Button>
             </Card>
@@ -297,7 +289,7 @@ function TrendingSection() {
                   Rating 8.2/10 ⭐
                 </Offcanvas.Body>
               </Offcanvas>
-              <Button variant="danger" className="mt-1">
+              <Button as={Link} to="/bluelock" variant="danger" className="mt-1">
                 Tonton Sekarang
               </Button>
             </Card>

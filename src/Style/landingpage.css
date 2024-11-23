@@ -30,14 +30,13 @@ html {
 }
 
 .navbar {
-  font-family: var(--bebasneue);
+  font-family: var(--jetbrains);
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.5)
+    black
   );
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
 }
 
 .intro {
@@ -177,6 +176,28 @@ html {
   padding: 20px;
 }
 
+/* Container utama slider */
+.slider-container {
+  width: 90%; /* Sesuaikan lebar slider */
+  margin: 0 auto; /* Pusatkan slider di tengah */
+  padding: 20px 0; /* Beri jarak atas-bawah */
+}
+
+/* Elemen individu di slider */
+.slider-item {
+  padding: 10px; /* Tambahkan jarak di sekitar elemen */
+  text-align: center; /* Pusatkan konten */
+}
+
+/* Gambar di dalam slider */
+.slider-item img {
+  width: 100%; /* Atur gambar agar responsif */
+  height: auto;
+  border-radius: 10px; /* Beri sudut melengkung pada gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+
 /* Responsif untuk tampilan mobile */
 @media (max-width: 768px) {
   .centered-video {
@@ -186,5 +207,8 @@ html {
   .centered-video .video-element {
     width: 100%;
     height: auto;
+  }
+  .slider-item {
+    padding: 5px; /* Sesuaikan jarak elemen */
   }
 }

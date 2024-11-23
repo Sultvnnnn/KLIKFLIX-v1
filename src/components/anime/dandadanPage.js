@@ -18,10 +18,17 @@ function DandadanPage() {
       <div className="dandadanName text-white">DANDADAN</div>
       <footer className="footer">
         <div className="footer-bottom">
-          <h8>
-            Copyright © 2024 KLIKFLIX by Kelompok 2.
+        <p>
+            Copyright © 2024 KLIKFLIX by{" "}
+            <a
+              href="https://instagram.com/sultvnnnn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @sultvnnnn
+            </a>
             <br /> Built with Love, React, and Bootstrap.
-          </h8>
+          </p>
         </div>
       </footer>
     </div>

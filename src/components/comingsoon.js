@@ -1,5 +1,4 @@
 import { Card, Image } from "react-bootstrap";
-import KravenImg from "../assets/Image/Coming soon/kraven.jpg";
 import MinecraftImg from "../assets/Image/Coming soon/minecraft.png";
 import Moana2Img from "../assets/Image/Coming soon/moana2.png";
 import CaptainImg from "../assets/Image/Coming soon/captainamerica.png";
@@ -7,6 +6,7 @@ import ImpossibleImg from "../assets/Image/Coming soon/impossible.png";
 import LOTRImg from "../assets/Image/Coming soon/LOTR.png";
 import MoanaLAImg from "../assets/Image/Coming soon/moanaLA.png";
 import MufasaImg from "../assets/Image/Coming soon/mufasa.png";
+import HowtoDragonImg from "../assets/Image/Coming soon/howtodragon.png";
 
 function Comingsoon() {
   return (
@@ -52,8 +52,8 @@ function Comingsoon() {
           </Card>
           <Card className="card-wrap text-white soonImg bg-dark">
             <Image
-              src={KravenImg}
-              alt="Anime Uzumaki"
+              src={HowtoDragonImg}
+              alt="How to train you dragon"
               className="moviePoster"
             />
           </Card>
@@ -106,8 +106,8 @@ function Comingsoon() {
           </Card>
           <Card className="card-wrap text-white soonImg bg-dark">
             <Image
-              src={KravenImg}
-              alt="Anime Uzumaki"
+              src={HowtoDragonImg}
+              alt="How to train you dragon"
               className="moviePoster"
             />
           </Card>
@@ -121,7 +121,7 @@ function Comingsoon() {
           <Card className="card-wrap text-white soonImg bg-dark">
             <Image
               src={CaptainImg}
-              alt="Anime Uzumaki"
+              alt="CAPTAIN"
               className="moviePoster"
             />
           </Card>
